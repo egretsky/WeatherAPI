@@ -74,7 +74,7 @@ private buildGeocodeQuery(): string {
 
 // TODO: Create buildWeatherQuery method
 private buildWeatherQuery(coordinates: Coordinates): string {
-  const buildWeatherQuery = `${this.baseURL}/data/2.5/forecast?lat=${coordinates.lat}&lon=${coordinates.lon}&appid=${this.API_KEY}`;
+  const buildWeatherQuery = `${this.baseURL}/data/2.5/forecast?lat=${coordinates.lat}&lon=${coordinates.lon}&units=imperial&appid=${this.API_KEY}`;
   return buildWeatherQuery;
 }
 
